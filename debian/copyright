@@ -1,0 +1,5 @@
+Upstream-Name: configuration-manager
+Source: https://github.com/Auterion/configuration-manager
+
+Files: *
+Copyright: 2019-2021 Auterion AG. All rights reserved

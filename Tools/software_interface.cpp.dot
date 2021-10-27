@@ -1,0 +1,18 @@
+digraph {
+    "NOT_READY" -> "IDLE" [label="NEXT1", style="solid", weight=1]
+    "NOT_READY" -> "DISABLED" [label="NEXT2", style="solid", weight=1]
+    "NOT_READY" -> "NOT_READY" [label="ERROR", style="dotted", weight=0.1]
+    "IDLE" -> "TRANSACTION" [label="NEXT1", style="solid", weight=1]
+    "IDLE" -> "NOT_READY" [label="ERROR", style="dotted", weight=0.1]
+    "TRANSACTION" -> "COMMIT_INPROGRESS" [label="NEXT1", style="solid", weight=1]
+    "TRANSACTION" -> "CANCEL" [label="NEXT2", style="solid", weight=1]
+    "TRANSACTION" -> "FAILED_TRANSACTION" [label="ERROR", style="solid", weight=1]
+    "COMMIT_INPROGRESS" -> "DONE" [label="NEXT1", style="solid", weight=1]
+    "COMMIT_INPROGRESS" -> "FAILED_TRANSACTION" [label="ERROR", style="solid", weight=1]
+    "DONE" -> "IDLE" [label="NEXT1", style="solid", weight=1]
+    "DONE" -> "NOT_READY" [label="ERROR", style="dotted", weight=0.1]
+    "CANCEL" -> "IDLE" [label="NEXT1", style="solid", weight=1]
+    "CANCEL" -> "NOT_READY" [label="ERROR", style="dotted", weight=0.1]
+    "FAILED_TRANSACTION" -> "IDLE" [label="NEXT1", style="solid", weight=1]
+    "FAILED_TRANSACTION" -> "NOT_READY" [label="ERROR", style="dotted", weight=0.1]
+}
