@@ -45,7 +45,7 @@ jobs:
         run:  docker pull auterion/multi-buildenv:${{ matrix.config.architecture }}-v1.1.0
       - name: Build and install MAVSDK
         run: |
-          git clone --recursive https://github.com/Auterion/MAVSDK.git -b develop
+          git clone --recursive https://github.com/mavlink/MAVSDK.git -b develop
           git fetch --all --tags
           docker run -t -d \
             -v $(pwd):/buildroot \
