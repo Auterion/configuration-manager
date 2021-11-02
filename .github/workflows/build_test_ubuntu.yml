@@ -39,7 +39,7 @@ jobs:
             libglib2.0-dev \
             libgtest-dev
         # Install MAVSDK from source
-        git clone --recursive https://github.com/Auterion/MAVSDK.git -b develop
+        git clone --recursive https://github.com/mavlink/MAVSDK.git
         cd MAVSDK
         cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo -DBUILD_SHARED_LIBS=ON -Bbuild/default -H.
         sudo cmake --build build/default --target install -j`nproc --all`
