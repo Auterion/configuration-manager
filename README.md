@@ -1,3 +1,5 @@
+<img align="right" height="20" src="https://auterion.com/wp-content/uploads/2020/05/auterion_logo_default_sunrise.svg">
+
 # configuration-manager
 [![Build and Test in Ubuntu](https://github.com/Auterion/configuration-manager/actions/workflows/build_test_ubuntu.yml/badge.svg?branch=master)](https://github.com/Auterion/configuration-manager/actions/workflows/build_test_ubuntu.yml?query=branch%3Amaster)
 
