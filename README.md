@@ -1,5 +1,5 @@
 # configuration-manager
-[![Build and Test in Ubuntu](https://github.com/Auterion/configuration-manager/actions/workflows/build_test_ubuntu.yml/badge.svg?branch=master)](https://github.com/Auterion/configuration-manager/actions/workflows/build_test_ubuntu.yml?query=branch%3Amaster) [![Build/deb packaging for Skynode and other archs](https://github.com/Auterion/configuration-manager/workflows/Build/deb%20packaging%20for%20Skynode%20and%20other%20archs/badge.svg?branch=master)](https://github.com/Auterion/configuration-manager/actions/workflows/build_pkg_multi_arch.yaml?query=branch%3Amaster)
+[![Build and Test in Ubuntu](https://github.com/Auterion/configuration-manager/actions/workflows/build_test_ubuntu.yml/badge.svg?branch=master)](https://github.com/Auterion/configuration-manager/actions/workflows/build_test_ubuntu.yml?query=branch%3Amaster)
 
 ## Introduction
 
